@@ -36,6 +36,51 @@ public class FXMLController implements Initializable {
         stage.show();
     }
     
+    @FXML
+    public void backToContactAction(ActionEvent event) throws IOException {
+
+        Parent backToContact = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/Credits.fxml"));
+
+        Scene contactScene = new Scene(backToContact);
+        contactScene.getStylesheets().add("/styles/Styles.css");
+
+        Stage creditStage = new Stage();
+
+        creditStage.setTitle("Contact");
+        creditStage.setScene(contactScene);
+        creditStage.show();
+    }
+
+    @FXML
+    public void openContact(ActionEvent event) throws IOException {
+
+        Parent openContact = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/Contact.fxml"));
+
+        Scene contactScene = new Scene(openContact);
+        contactScene.getStylesheets().add("/styles/Styles.css");
+
+        Stage creditStage = new Stage();
+
+        creditStage.setTitle("Contact");
+        creditStage.setScene(contactScene);
+        creditStage.show();
+    }
+
+    @FXML
+    public void openFAQ(ActionEvent event) throws IOException {
+
+       Parent openFAQ = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/FAQ.fxml"));
+
+        Scene FAQScene = new Scene(openFAQ);
+        FAQScene.getStylesheets().add("/styles/Styles.css");
+
+        Stage FAQStage = new Stage();
+
+        FAQStage.setTitle("Contact");
+        FAQStage.setScene(FAQScene);
+        FAQStage.show();
+
+    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
