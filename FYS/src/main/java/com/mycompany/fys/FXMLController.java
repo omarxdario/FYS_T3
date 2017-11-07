@@ -127,7 +127,42 @@ public class FXMLController extends Application {
         stage.setScene(scene);
         stage.show();
     }
+    @FXML
+    public void printPDFFile(ActionEvent event) throws IOException {
 
+        try {
+
+            String fileName = "PDFoutput.pdf";
+
+            PDDocument doc = new PDDocument();
+            PDPage page = new PDPage();
+
+            doc.addPage(page);
+
+            PDPageContentStream content = new PDPageContentStream(doc, page);
+
+            content.beginText();
+            content.setFont(PDType1Font.TIMES_ROMAN, 26);
+            content.moveTextPositionByAmount(220, 750);
+            content.drawString("Titel");
+            content.endText();
+
+            content.beginText();
+            content.setFont(PDType1Font.TIMES_ROMAN, 16);
+            content.moveTextPositionByAmount(80, 700);
+            content.drawString("Inhoud");
+            content.endText();
+
+            content.close();
+            doc.save(fileName);
+            doc.close();
+
+            System.out.println("your file was saved in: " + System.getProperty("user.dir"));
+
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }
+    }
 
     public static void main(String[] args) {
         launch(args);
