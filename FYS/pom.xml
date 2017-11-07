@@ -11,7 +11,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <mainClass>com.mycompany.fys.MainApp</mainClass>
+        <mainClass>com.mycompany.fys.FXMLController</mainClass>
     </properties>
 
     <organization>
@@ -109,6 +109,7 @@
             <groupId>com.jfoenix</groupId>
             <artifactId>jfoenix</artifactId>
             <version>1.9.0</version>
+            <type>jar</type>
         </dependency>
             <dependency>
             <groupId>org.apache.pdfbox</groupId>
