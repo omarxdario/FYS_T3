@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #2F3F68;;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.fys.FXMLController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eb2227" height="102.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: #78819C;;" width="500.0" />
+        <Label fx:id="label" layoutX="207.0" layoutY="23.0" minHeight="16" minWidth="69" text="Help" textFill="WHITE">
+            <font>
+                <Font name="Avenir Light" size="40.0" />
+            </font>
+        </Label>
+
+              <JFXButton fx:id="closeHelpButton" buttonType="RAISED" layoutX="359.0" layoutY="428.0" onAction="#closeHelp" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #78819C;;" text="Terug" textFill="WHITE">
+            <font>
+                <Font name="Avenir Light" size="13.0" />
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>
