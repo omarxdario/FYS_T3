@@ -17,9 +17,9 @@ To Do list:
 
 * ~~Find out why old scene's dont close after opening new one~~
 
-* ~~Merge sources~~ Not needed, this is the main now.
+* ~~Merge sources Not needed, this is the main now.~~
 
-* ~~PDF printer toevoegen~~ added in Statistics.fxml, FXMLController & POM.
+* ~~PDF printer toevoegen added in Statistics.fxml, FXMLController & POM.~~
 
 * Add features to "Search Luggage".
 
