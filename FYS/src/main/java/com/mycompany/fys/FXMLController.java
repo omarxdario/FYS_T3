@@ -17,41 +17,25 @@ public class FXMLController extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/Homepage.fxml"));
-        
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/Styles.css");
-        
-        stage.setTitle("JavaFX and Maven");
+        stage.setTitle("FYS project");
         stage.setScene(scene);
         stage.show();
     }
 
-        @FXML
+    @FXML
     public void openHome(ActionEvent event) throws IOException {
         Node node = (Node) event.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Homepage.fxml"));/* Exception */
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Homepage.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
 
-    
-    
     @FXML
-    public void testFunction(ActionEvent event) throws IOException {
-        Node node = (Node) event.getSource();
-        Stage stage = (Stage) node.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Scene_1.fxml"));/* Exception */
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
-
-
-      @FXML
     public void openSubmitAction(ActionEvent event) throws IOException {
-
         Node node = (Node) event.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/Submit.fxml"));
@@ -60,10 +44,8 @@ public class FXMLController extends Application {
         stage.show();
     }
     
-    
-       @FXML
+    @FXML
     public void openStatisticsAction(ActionEvent event) throws IOException {
-
         Node node = (Node) event.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/Statistics.fxml"));
@@ -72,10 +54,8 @@ public class FXMLController extends Application {
         stage.show();
     }
     
-    
-        @FXML
+    @FXML
     public void openSeachLugAction(ActionEvent event) throws IOException {
-
         Node node = (Node) event.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/SearchLug.fxml"));
@@ -86,7 +66,6 @@ public class FXMLController extends Application {
     
     @FXML
     public void openCreditsAction(ActionEvent event) throws IOException {
-
         Node node = (Node) event.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/Credits.fxml"));
@@ -97,7 +76,6 @@ public class FXMLController extends Application {
 
     @FXML
     public void backToCreditsAction(ActionEvent event) throws IOException {
-
         Node node = (Node) event.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/Credits.fxml"));
@@ -108,7 +86,6 @@ public class FXMLController extends Application {
 
     @FXML
     public void openContact(ActionEvent event) throws IOException {
-
         Node node = (Node) event.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/Contact.fxml"));
@@ -119,7 +96,6 @@ public class FXMLController extends Application {
 
     @FXML
     public void openFAQ(ActionEvent event) throws IOException {
-
         Node node = (Node) event.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/FAQ.fxml"));
@@ -127,18 +103,16 @@ public class FXMLController extends Application {
         stage.setScene(scene);
         stage.show();
     }
+    
     @FXML
     public void printPDFFile(ActionEvent event) throws IOException {
-
         try {
-
             String fileName = "PDFoutput.pdf";
-
+            
             PDDocument doc = new PDDocument();
             PDPage page = new PDPage();
-
             doc.addPage(page);
-
+            
             PDPageContentStream content = new PDPageContentStream(doc, page);
 
             content.beginText();
