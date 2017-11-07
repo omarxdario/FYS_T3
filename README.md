@@ -24,7 +24,8 @@ To Do list:
 * Add features to "Search Luggage".
 
 * Add sidebar menu, keywords: overlay
-  >Add help button on all screens
+
+  >Add help button on all screens
 
 * Find out how to print external data in PDF.
 
