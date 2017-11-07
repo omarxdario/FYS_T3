@@ -1,41 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="com.mycompany.fys.FXMLController">
-        <children>
-        <BorderPane prefHeight="800.0" prefWidth="1024.0">
-            <top>
-                <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-                    <children>
-                        <Label alignment="CENTER" prefHeight="100.0" prefWidth="1109.0" text="{Naam van app}" textAlignment="CENTER">
-                            <font>
-                                <Font name="Arial Bold Italic" size="72.0" />
-                            </font>
-                        </Label>
-                    </children>
-                </HBox>
-            </top>
-            <center>
-                <Pane prefHeight="700.0" prefWidth="994.0" BorderPane.alignment="CENTER">
-                    <children>
-                        <Button fx:id="Button1" alignment="CENTER" layoutX="793.0" layoutY="591.0" onAction="#backToContactAction" prefHeight="69.0" prefWidth="189.0" text="Back">
-                            <font>
-                                <Font size="20.0" />
-                            </font>
-                        </Button>
-                  <TextArea layoutX="112.0" layoutY="150.0" prefHeight="400.0" prefWidth="800.0" text="FAQ: " />
-                    </children>
-                </Pane>
-            </center>
-        </BorderPane>
-        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1024.0" style="-fx-background-color: #2F3F68;;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.fys.FXMLController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eb2227" height="109.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: #78819C;;" width="1024.0" />
+        <Label fx:id="label" layoutX="449.0" layoutY="31.0" minHeight="16" minWidth="69" text="FAQ" textFill="WHITE">
+            <font>
+                <Font name="Avenir Light" size="40.0" />
+            </font>
+        </Label>
+        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="67.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vraag" textOrigin="TOP" wrappingWidth="288.978515625">
+            <font>
+                <Font name="Avenir Light" size="20.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="67.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Antwoord" textOrigin="TOP" wrappingWidth="288.978515625">
+            <font>
+                <Font name="Avenir Light" size="20.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="67.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vraag" textOrigin="TOP" wrappingWidth="288.978515625">
+            <font>
+                <Font name="Avenir Light" size="20.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="67.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Antwoord" textOrigin="TOP" wrappingWidth="288.978515625">
+            <font>
+                <Font name="Avenir Light" size="20.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="67.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vraag" textOrigin="TOP" wrappingWidth="288.978515625">
+            <font>
+                <Font name="Avenir Light" size="20.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="67.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Antwoord" textOrigin="TOP" wrappingWidth="288.978515625">
+            <font>
+                <Font name="Avenir Light" size="20.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="67.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vraag" textOrigin="TOP" wrappingWidth="288.978515625">
+            <font>
+                <Font name="Avenir Light" size="20.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="67.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Antwoord" textOrigin="TOP" wrappingWidth="288.978515625">
+            <font>
+                <Font name="Avenir Light" size="20.0" />
+            </font>
+        </Text>
+        <JFXButton fx:id="backToCreditButton" buttonType="RAISED" layoutX="875.0" layoutY="715.0" onAction="#backToCreditsAction" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #78819C;;" text="Terug" textFill="WHITE">
+            <font>
+                <Font name="Avenir Light" size="13.0" />
+            </font>
+        </JFXButton>
     </children>
 </AnchorPane>
