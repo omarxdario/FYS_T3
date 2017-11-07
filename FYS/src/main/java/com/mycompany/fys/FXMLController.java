@@ -197,6 +197,32 @@ public class FXMLController extends Application {
             }
         });
     }
+    
+    @FXML
+    public void openHelp(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/helpPopup.fxml"));
+        final Scene scene = new Scene(root);
+        final Stage stage = new Stage();
+        stage.setTitle("Help");
+        stage.setScene(scene);
+        stage.show();
+
+        root.setOnKeyPressed(new EventHandler<KeyEvent>() {
+            public void handle(KeyEvent ke) {
+                if (ke.getCode() == KeyCode.ESCAPE) {
+                    System.out.println("Key Pressed: " + ke.getCode());
+                    stage.close();
+                }
+            }
+        });
+    }
+
+    @FXML
+    public void closeHelp(ActionEvent event) throws IOException {
+        Node node = (Node) event.getSource();
+        Stage stage = (Stage) node.getScene().getWindow();
+        stage.close();
+    }
 
     @FXML
     public void printPDFFile(ActionEvent event) throws IOException {
