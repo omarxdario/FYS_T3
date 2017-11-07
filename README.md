@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+# FYS_T3
+Fasten Your Seatbelt HvA SE Project
 
-You can use the [editor on GitHub](https://github.com/dewarian/FYS_T3/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Guidelines:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+* Buttons are named like: purpuseButton. E.g. doesSomethingButton.
 
-### Markdown
+Use the color #78819C and are RAISED (shadow effect).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* Text is WHITE and use Avenir Light as font. Make sure the size corresponds with other scenes.
 
-```markdown
-Syntax highlighted code block
+* Objects: Make sure a reoccuring objects (like the back-button) stay on the same spot.
 
-# Header 1
-## Header 2
-### Header 3
+---------
 
-- Bulleted
-- List
+To Do list:
 
-1. Numbered
-2. List
+* ~~Find out why old scene's dont close after opening new one~~
 
-**Bold** and _Italic_ and `Code` text
+* ~~Merge sources~~ Not needed, this is the main now.
 
-[Link](url) and ![Image](src)
-```
+* ~~PDF printer toevoegen~~ added in Statistics.fxml, FXMLController & POM.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+* Add features to "Search Luggage".
 
-### Jekyll Themes
+* Add sidebar menu, keywords: overlay
+  >Add help button on all screens
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dewarian/FYS_T3/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+* Find out how to print external data in PDF.
 
-### Support or Contact
+* Remove unused imports.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+* Find out why some buttons are highlighted after compiling.
