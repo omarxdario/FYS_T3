@@ -29,7 +29,7 @@
           <TextField layoutX="286.0" layoutY="444.0" maxWidth="-Infinity" prefHeight="31.0" prefWidth="500.0" promptText="City of residence" />
            
                        
-        <JFXButton fx:id="homeButton" buttonType="RAISED" layoutX="50.0" layoutY="730.0" onAction="#openHome" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #78819C;;" text="Terug" textFill="WHITE">
+        <JFXButton fx:id="backToSubmitButton" buttonType="RAISED" layoutX="50.0" layoutY="730.0" onAction="#openSubmitAction" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #78819C;;" text="Terug" textFill="WHITE">
             <font>
                 <Font name="Avenir Light" size="13.0" />
             </font>
