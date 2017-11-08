@@ -221,7 +221,7 @@ public class FXMLController extends Application {
     public void openSubmit2(ActionEvent event) throws IOException {
         Node node = (Node) event.getSource();
         final Stage stage = (Stage) node.getScene().getWindow();
-        final Parent home = FXMLLoader.load(getClass().getResource("/fxml/submit.fxml"));
+        final Parent home = FXMLLoader.load(getClass().getResource("/fxml/Submit.fxml"));
         final Scene hScene = new Scene(home);
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/openSubmit2.fxml"));
         Scene scene = new Scene(root);
