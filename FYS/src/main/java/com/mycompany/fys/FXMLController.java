@@ -216,6 +216,28 @@ public class FXMLController extends Application {
             }
         });
     }
+    
+    @FXML
+    public void openSubmit2(ActionEvent event) throws IOException {
+        Node node = (Node) event.getSource();
+        final Stage stage = (Stage) node.getScene().getWindow();
+        final Parent home = FXMLLoader.load(getClass().getResource("/fxml/submit.fxml"));
+        final Scene hScene = new Scene(home);
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/openSubmit2.fxml"));
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+
+        root.setOnKeyPressed(new EventHandler<KeyEvent>() {
+            public void handle(KeyEvent ke) {
+                if (ke.getCode() == KeyCode.ESCAPE) {
+                    System.out.println("Key Pressed: " + ke.getCode());
+                    stage.setScene(hScene);
+                }
+            }
+        });
+    }
+    
 
     @FXML
     public void closeHelp(ActionEvent event) throws IOException {
