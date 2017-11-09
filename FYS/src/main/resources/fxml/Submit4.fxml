@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1024.0" style="-fx-background-color: #2F3F68;;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.fys.FXMLController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eb2227" height="109.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: #78819C;;" width="1024.0" />
+        <Label fx:id="label" layoutX="449.0" layoutY="25.0" minHeight="16" minWidth="69" text="Sumbit" textFill="WHITE">
+            <font>
+                <Font name="Avenir Light" size="40.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="openHelpButton" buttonType="RAISED" layoutX="875.0" layoutY="47.0" onAction="#openHelp" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #2F3F68;;" text="Help" textFill="WHITE">
+            <font>
+                <Font name="Avenir Light" size="13.0" />
+            </font>
+        </JFXButton>
+          <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="500.0" layoutX="162.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="700.0" />
+          <Rectangle arcHeight="5.0" arcWidth="5.0" height="80.0" layoutX="162.0" layoutY="151.0" stroke="BLACK" strokeType="INSIDE" width="700.0" />
+          <TextField fx:id="labelDButton" layoutX="286.0" layoutY="343.0" maxWidth="-Infinity" prefHeight="31.0" prefWidth="462.0" promptText="Brand" />
+
+
+        <JFXButton fx:id="backToSubmit3Button" buttonType="RAISED" layoutX="50.0" layoutY="730.0" onAction="#openSubmit3" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #78819C;;" text="Terug" textFill="WHITE">
+            <font>
+                <Font name="Avenir Light" size="13.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="openSubmitPopUpButton" buttonType="RAISED" layoutX="870.0" layoutY="730.0" onAction="#openSubmitPopUp" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #78819C;;" text="Bevestigen" textFill="WHITE">
+            <font>
+                <Font name="Avenir Light" size="13.0" />
+            </font>
+        </JFXButton>
+      <Label fx:id="label1" layoutX="219.0" layoutY="162.0" minHeight="16" minWidth="69" text="Bagage Identification Information" textFill="WHITE">
+         <font>
+            <Font name="Avenir Light" size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="flightIDButton" layoutX="286.0" layoutY="400.0" maxWidth="-Infinity" prefHeight="31.0" prefWidth="462.0" promptText="Colour(s)" />
+      <TextField fx:id="destinationButton" layoutX="286.0" layoutY="456.0" maxWidth="-Infinity" prefHeight="109.0" prefWidth="462.0" promptText="Charatistics, devided by a comma" />
+      <JFXComboBox layoutX="286.0" layoutY="271.0" prefHeight="27.0" prefWidth="462.0" promptText="Type Luggage" />
+    </children>
+</AnchorPane>
