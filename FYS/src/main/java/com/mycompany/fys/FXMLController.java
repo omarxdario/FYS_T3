@@ -71,6 +71,66 @@ public class FXMLController extends Application {
             }
         });
     }
+        @FXML
+    public void openSubmit3(ActionEvent event) throws IOException {
+        Node node = (Node) event.getSource();
+        final Stage stage = (Stage) node.getScene().getWindow();
+        final Parent home = FXMLLoader.load(getClass().getResource("/fxml/Homepage.fxml"));
+        final Scene hScene = new Scene(home);
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Submit3.fxml"));
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+
+        root.setOnKeyPressed(new EventHandler<KeyEvent>() {
+            public void handle(KeyEvent ke) {
+                if (ke.getCode() == KeyCode.ESCAPE) {
+                    System.out.println("Key Pressed: " + ke.getCode());
+                    stage.setScene(hScene);
+                }
+            }
+        });
+    }
+            @FXML
+    public void openSubmit4(ActionEvent event) throws IOException {
+        Node node = (Node) event.getSource();
+        final Stage stage = (Stage) node.getScene().getWindow();
+        final Parent home = FXMLLoader.load(getClass().getResource("/fxml/Homepage.fxml"));
+        final Scene hScene = new Scene(home);
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Submit4.fxml"));
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+
+        root.setOnKeyPressed(new EventHandler<KeyEvent>() {
+            public void handle(KeyEvent ke) {
+                if (ke.getCode() == KeyCode.ESCAPE) {
+                    System.out.println("Key Pressed: " + ke.getCode());
+                    stage.setScene(hScene);
+                }
+            }
+        });
+    }
+    
+        @FXML
+    public void openSubmitPopUp(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/submitPopUp.fxml"));
+        final Scene scene = new Scene(root);
+        final Stage stage = new Stage();
+        stage.setTitle("Submitted");
+        stage.setScene(scene);
+        stage.show();
+
+        root.setOnKeyPressed(new EventHandler<KeyEvent>() {
+            public void handle(KeyEvent ke) {
+                if (ke.getCode() == KeyCode.ESCAPE) {
+                    System.out.println("Key Pressed: " + ke.getCode());
+                    stage.close();
+                }
+            }
+        });
+    }
+    
 
     @FXML
     public void openStatisticsAction(ActionEvent event) throws IOException {
